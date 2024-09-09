@@ -59,7 +59,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   width: 80%;
-  background-color: #00000034;
+  background-color: #000000ea;
   border-radius: 20px;
   border: 2px solid white;
   flex-direction: column-reverse;
@@ -111,6 +111,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
   position: absolute;
   background-color: #000000c4;
@@ -166,12 +167,12 @@ animation-duration: 2s;
 animation-delay: 0.5s;
 animation-iteration-count: infinite;
 border-radius: 100%;
-width: 30%;
+width: 50%;
 aspect-ratio: 4/4;
-z-index: 5;
+z-index: -1;
 filter: drop-shadow(10px 10px  40px rgb(255, 0, 0));
-top: 30%;
-left: 35%;
+top: 18%;
+left: 25%;
 transform: translate(-50%,-50%);
 }
 .img{
@@ -186,6 +187,19 @@ transform: translate(-50%,-50%);
     aspect-ratio: 4/4;
     border-radius: 100%;
   
+}
+@media screen and (max-width:735px){
+  .img-animation{
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media screen and (max-width:435px){
+  .img-animation{
+    width: 100%;
+    left: 0%;
+  }
 }
 
 

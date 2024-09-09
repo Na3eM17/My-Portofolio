@@ -69,12 +69,12 @@ const Close =() =>{
                 ) : (
                     <div id="game">
                         <h1>welcome to gues the number game</h1><br />
-                        <h1>enter number...</h1>
+                        <h1>press generate</h1>
                         <div className="input-btn">
                             <input id="inpt" 
                             value={inputValue} 
                             type="text" 
-                            placeholder="press generete"
+                            placeholder="enter number....."
                             onChange={(e) => setInputValue(e.target.value)}
                              />
 
