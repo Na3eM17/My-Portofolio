@@ -58,7 +58,7 @@ const Close =() =>{
             <img src={ph} width="50px"/>
             <p className="p-personal">
                 Hello , my name is <span>NAEEM AL-HINDI</span> <br />
-                wellcome to <a href="https://www.instagram.com/">my-protifolio</a> , i'm frontend developer <br />
+                wellcome to <a href="http://myportofolio-self-five.vercel.app">my-protifolio</a> , i'm frontend developer <br />
                 and studing SE
             </p>
         </div>
