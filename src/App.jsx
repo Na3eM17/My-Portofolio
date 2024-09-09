@@ -6,9 +6,16 @@ function App() {
 
   return (
     <>
-      <Header/>
+      <Header name="prifiles" name2="game" name3="footer" hdr="h-containor2"
+      insta="https://na3em17.github.io/My-Profiles/"
+      />
       <Contain/>
-     
+      <Header name="Instagram" name2="Github" 
+      name3="Linkedin" hdr="h-containor"
+       insta="https://www.instagram.com/neemo_bh/"
+       git="https://github.com/Na3eM17"
+       linked="https://www.linkedin.com/in/naeem-alhindi-720b29310/"
+       />
     </>
   )
 }

@@ -65,7 +65,22 @@ button:hover {
   flex-direction: column-reverse;
   margin: 10px;
   position: fixed;
+  bottom: 1%;
+}
+
+.h-containor2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  background-color: #000000ea;
+  border-radius: 20px;
+  border: 2px solid white;
+  flex-direction: column-reverse;
+  margin: 10px;
+  position: fixed;
   top: 1%;
+  z-index: 1;
 }
 .containor{
   display: flex;
@@ -78,7 +93,7 @@ button:hover {
   flex-direction:column;
   margin: 10px;
 }
-.ul-heder{
+.ul-heder ul{
   display: flex;
     width: 100%;
     align-items: center;
@@ -86,6 +101,12 @@ button:hover {
     list-style: none;
     padding: 0;
     gap: 20px;
+}
+
+
+
+.ul-heder{
+  width: 70%;
 }
 
 .p-personal{
@@ -163,7 +184,7 @@ input{
 opacity: 0.2;
 animation-name: rotate;
 animation-timing-function: linear;
-animation-duration: 2s;
+animation-duration: 7s;
 animation-delay: 0.5s;
 animation-iteration-count: infinite;
 border-radius: 100%;
@@ -199,6 +220,9 @@ transform: translate(-50%,-50%);
   .img-animation{
     width: 100%;
     left: 0%;
+  }
+  .containor{
+    width: 99%;
   }
 }
 

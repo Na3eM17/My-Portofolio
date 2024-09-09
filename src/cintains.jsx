@@ -19,6 +19,8 @@ function genrate(){
     const newNumber=Math.floor(Math.random()*100)+1;
     setNum(newNumber);
     console.log("number is ",newNumber);
+    setRes("")
+    settime(0)
 }
 
 
