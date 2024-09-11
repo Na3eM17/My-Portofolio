@@ -141,6 +141,7 @@ button:hover {
 .input-btn{
   width: 100%;
   position: relative;
+  color: #ffffff;
 }
 input{
   width: 100%;
@@ -152,6 +153,7 @@ input{
   right: -2%;
   top: 0;
   border-radius: 0;
+  color: #ffffff;
 }
 #play{
   padding: 10px;
