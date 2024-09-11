@@ -8,7 +8,7 @@ function App() {
     <>
       <Header name="prifiles" name2="game" name3="footer" hdr="h-containor2"
       linked="https://myportofolio-self-five.vercel.app/#view"
-      git="http://myportofolio-self-five.vercel.app/#play"
+      git="https://myportofolio-self-five.vercel.app/#containor"
       insta="https://na3em17.github.io/My-Profiles/"
       />
       <Contain/>

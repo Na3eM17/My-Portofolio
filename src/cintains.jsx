@@ -67,7 +67,7 @@ const Close =() =>{
 
     return(
         <>
-         <div className="containor">
+         <div id="containor">
          <div className="img" >
             <img src={ph} width="50px" />
             <p className="p-personal">
