@@ -157,7 +157,7 @@ input{
   padding: 10px;
 }
 .projects{
-  width: 90%;
+  width: 80%;
   border: 1px solid red;
   border-radius: 50px;
   display: flex;
@@ -166,6 +166,7 @@ input{
   padding-bottom: 50px;
   padding:50px 20px;
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 .project{
   display: flex;
@@ -303,6 +304,17 @@ border-radius: 0;
   }
   .project2{
     flex-direction: column;
+  }
+  
+  .project p{
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .project2 p{
+    width: 100%;
+    font-size: 25px;
+
   }
 
   .project a{
