@@ -81,12 +81,12 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 95%;
   background-color: #00000034;
   border-radius: 20px;
   border: 2px solid white;
   flex-direction:column;
-  margin: 10px;
+  margin-bottom: 50px;
 }
 .ul-heder ul{
   display: flex;
@@ -111,7 +111,7 @@ button:hover {
   font-size: 20px;
   font-weight: 500;
 }
-.containor .img span{
+#containor .img span{
   color: #636363;
 }
 .name{
@@ -159,7 +159,7 @@ input{
   padding: 10px;
 }
 .projects{
-  width: 80%;
+  width: 83%;
   border: 1px solid red;
   border-radius: 50px;
   display: flex;
