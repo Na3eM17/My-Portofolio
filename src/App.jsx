@@ -7,7 +7,8 @@ function App() {
   return (
     <>
       <Header name="prifiles" name2="game" name3="footer" hdr="h-containor2"
-      insta="https://na3em17.github.io/My-Profiles/"
+      linked="http://myportofolio-self-five.vercel.app/#h-containor"
+      git="http://myportofolio-self-five.vercel.app/.img"
       />
       <Contain/>
       <Header name="Instagram" name2="Github" 

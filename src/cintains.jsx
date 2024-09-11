@@ -1,6 +1,31 @@
 import { useState } from "react";
 import photo from "./assets/logo.jpg"
 import ph from "./assets/photo.jpg"
+import pic1 from "./assets/project.png"
+import pic2 from "./assets/project2.png"
+import pic3 from "./assets/project3.png"
+import pic4 from "./assets/project4.png"
+import pic5 from "./assets/project5.png"
+import pic6 from "./assets/firstproject.png"
+import pic7 from "./assets/reactprojrct.png"
+
+const views = document.querySelectorAll("#view");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        observer.unobserve(entry);
+        }
+    });
+
+} 
+);
+
+views.forEach(card =>{
+    observer.observe(card);
+});
+
 
 function Contain(){
     const [games,setGame]=useState(true);
@@ -89,48 +114,55 @@ const Close =() =>{
                         </div>
                     </div>
                 )}
-                <div className="projects">
-                    <div className="project">
-                        <img src="" />
-                        <p>
-
+                <div className="projects" >
+                    <div className="project"id="view">
+                    <a href="https://na3em17.github.io/Fech-Project/"><img src={pic1} /></a>
+                    <p>
+                            fech api project <br />by using githup <br />
+                            <a href="https://na3em17.github.io/Fech-Project/">visit project</a>
                         </p>
                     </div>
                     
-                     <div className="project">
-                        <img src="" />
+                     <div className="project2" id="view">
+                        <a href="https://na3em17.github.io/project_2/"><img src={pic2} /></a>
                         <p>
-                            
+                            project 1 <br />fully responsive <br />
+                            <a href="https://na3em17.github.io/project_2/">visit project</a>
                         </p>
                     </div>
-                    <div className="project">
-                        <img src="" />
-                        <p>
-                            
+                    <div className="project" id="view">
+                        <a href="https://na3em17.github.io/project_4/"><img src={pic3} /></a>
+                        <p> 
+                            project 2 <br />fully responsive <br />
+                            <a href="https://na3em17.github.io/project_4/">visit project</a>
                         </p>
                     </div>
-                    <div className="project">
-                        <img src="" />
+                    <div className="project2"id="view">
+                        <a href="https://na3em17.github.io/project_6/"><img src={pic4} /></a>
                         <p>
-                            
+                            project 3 <br />fully responsive <br />
+                            <a href="https://na3em17.github.io/project_6/">visit project</a>
                         </p>
                     </div>
-                    <div className="project">
-                        <img src="" />
+                    <div className="project"id="view">
+                        <a href="https://na3em17.github.io/project7/"><img src={pic5} /></a>
                         <p>
-                            
+                            project 4 <br />fully responsive <br />
+                            <a href="https://na3em17.github.io/project7/">visit project</a>
                         </p>
                     </div>
-                    <div className="project">
-                        <img src="" />
+                    <div className="project2"id="view">
+                        <a href="https://na3em17.github.io/first_project/"><img src={pic6} /></a>
                         <p>
-                            
+                            my first project <br />fully responsive <br />
+                            <a href="https://na3em17.github.io/first_project/">visit project</a>
                         </p>
                     </div>
-                    <div className="project">
-                        <img src="" />
-                        <p>
-                            
+                    <div className="project"id="view">
+                        <a href="https://passwordgenerator-pearl-mu.vercel.app/"><img src={pic7} /></a>
+                    	<p>
+                            first project with react <br />
+                            <a href="https://passwordgenerator-pearl-mu.vercel.app/">visit project</a>
                         </p>
                     </div>
                 </div>

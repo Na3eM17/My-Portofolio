@@ -1,7 +1,7 @@
 
 function Header(props){
     return(
-        <div className={props.hdr}>
+        <div id={props.hdr}>
            
             <div className="ul-heder">
                 <ul >

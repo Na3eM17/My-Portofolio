@@ -1,3 +1,13 @@
+#view{
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#view.show{
+  transform: translateY(0);
+  opacity: 1;
+  transition: 1s ease-in;
+}
 #root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   display: flex;
@@ -5,12 +15,11 @@
   justify-content: center;
   flex-direction: column;
   color:white;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.459) 70%,rgb(68, 0, 0));
-
   width: 100%;
-  height: 220vh;
   position: relative;
   z-index: 1;
+  padding-top: 200px;
+padding-bottom: 100px;
 }
 
 a {
@@ -28,8 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   min-width: 320px;
-  min-height: 220vh;
-  background-color: rgb(0, 0, 0);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.993) 50%,rgb(68, 0, 0));
 }
 
 h1 {
@@ -54,7 +62,7 @@ button:hover {
   border-color: #ff0000;
 }
 
-.h-containor{
+#h-containor{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,13 +70,10 @@ button:hover {
   background-color: #000000ea;
   border-radius: 20px;
   border: 2px solid white;
-  flex-direction: column-reverse;
   margin: 10px;
-  position: fixed;
-  bottom: 1%;
 }
 
-.h-containor2{
+#h-containor2{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +81,6 @@ button:hover {
   background-color: #000000ea;
   border-radius: 20px;
   border: 2px solid white;
-  flex-direction: column-reverse;
   margin: 10px;
   position: fixed;
   top: 1%;
@@ -138,9 +142,10 @@ button:hover {
   background-color: #000000c4;
   border:2px dashed red;
   padding: 20px;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%,-50%);
+  z-index: 1;
 }
 .input-btn{
   width: 100%;
@@ -163,12 +168,44 @@ input{
   border-radius: 50px;
   display: flex;
   flex-direction: column;
+  gap: 50px;
+  padding-bottom: 50px;
+  padding:50px 20px;
+  margin-top: 50px;
 }
 .project{
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  align-items: center;
+
   width: 100%;
+}
+.project2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+
+.project p{
+  font-size: 30px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.project2 p{
+  font-size: 30px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 @keyframes rotate{
   from{
@@ -191,7 +228,7 @@ border-radius: 100%;
 width: 50%;
 aspect-ratio: 4/4;
 z-index: -1;
-filter: drop-shadow(10px 10px  40px rgb(255, 0, 0));
+filter: drop-shadow(20px 20px  20px rgb(255, 0, 0));
 top: 18%;
 left: 25%;
 transform: translate(-50%,-50%);
@@ -209,10 +246,45 @@ transform: translate(-50%,-50%);
     border-radius: 100%;
   
 }
+
+.project img{
+  border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 7/5;
+opacity: 0.8;
+}
+.project img:hover{
+opacity: 1;
+width: 95%;
+border-radius: 0;
+}
+
+.project2 img:hover{
+  opacity: 1;
+  width: 95%;
+  border-radius: 0;
+  }
+
+.project a{
+  width: 50%;
+}.project2 a{
+  width: 50%;
+}
+
+.project2 img{
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0.8;
+  aspect-ratio: 7/5;
+}
 @media screen and (max-width:735px){
   .img-animation{
     width: 80%;
     left: 10%;
+  }
+  #game{
+    top:30%;
+    width:80%;
   }
 }
 
@@ -221,9 +293,41 @@ transform: translate(-50%,-50%);
     width: 100%;
     left: 0%;
   }
+  #game{
+    width: 80%;
+    font-size: 10px;
+    top:20%;
+  }
+  #game button{
+    font-size: 15px;
+  }
   .containor{
     width: 99%;
   }
+  .project{
+    flex-direction: column;
+  }
+  .project2{
+    flex-direction: column;
+  }
+
+  .project a{
+    width: 100%;  
+  }
+  .project2 a{
+    width: 100%;
+  }
 }
 
+@media screen and (min-width:1024px){
+  #root{
+    width: 1224px;
+  }
+  .h-containor{
+    width: 1024px;
+  }
+  .h-containor2{
+    width: 1024px;
+  }
+}
 
