@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Header name="prifiles" name2="game" name3="footer" hdr="h-containor2"
+      <Header name="profiles" name2="game" name3="footer" hdr="h-containor2"
       linked="https://myportofolio-self-five.vercel.app/#view"
       git="https://myportofolio-self-five.vercel.app/#containor"
       insta="https://na3em17.github.io/My-Profiles/"
