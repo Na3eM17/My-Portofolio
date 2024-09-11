@@ -103,7 +103,7 @@ const Close =() =>{
                         </div>
                     </div>
                 )}
-                <div className="projects" >
+                <div className="view" >
                     <div className="project" >
                     <a href="https://na3em17.github.io/Fech-Project/"><img src={pic1} /></a>
                     <p>
