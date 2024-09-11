@@ -172,43 +172,31 @@ input{
 }
 @keyframes apeer{
   from{
-    transform: translateX(700px);
+    transform: translateY(700px);
     opacity: 0;
     scale: 0.5;
     
   }
   to{
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
     scale: 1;
   }
 }
 
-@keyframes apeer2{
-  from{
-    transform: translateX(-700px);
-    opacity: 0;
-    scale: 0.5;
-    
-  }
-  to{
-    transform: translateX(0);
-    opacity: 1;
-    scale: 1;
-  }
-}
+
 
 .project{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  animation: apeer2 linear;
+  animation: apeer linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
   width: 100%;
 }
 .project2{
-  animation: apeer 5s ease-in;
+  animation: apeer linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
   display: flex;
