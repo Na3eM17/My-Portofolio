@@ -9,25 +9,14 @@ import pic5 from "./assets/project5.png"
 import pic6 from "./assets/firstproject.png"
 import pic7 from "./assets/reactprojrct.png"
 
-const views = document.querySelectorAll("#view");
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry =>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        observer.unobserve(entry);
-        }
-    });
-
-} 
-);
-
-views.forEach(card =>{
-    observer.observe(card);
-});
 
 
 function Contain(){
+
+
+
+
     const [games,setGame]=useState(true);
     const[Num,setNum]=useState(Math.floor(Math.random()*100)+1);
     const[inputValue,setInputValue]=useState("");
@@ -79,8 +68,8 @@ const Close =() =>{
     return(
         <>
          <div className="containor">
-         <div className="img">
-            <img src={ph} width="50px"/>
+         <div className="img" >
+            <img src={ph} width="50px" />
             <p className="p-personal">
                 Hello , my name is <span>NAEEM AL-HINDI</span> <br />
                 wellcome to <a href="http://myportofolio-self-five.vercel.app">my-protifolio</a> , i'm frontend developer <br />
@@ -89,7 +78,7 @@ const Close =() =>{
         </div>
 
         {games? (
-                    <div id="n">
+                    <div id="play">
                         <h2>Press play to show the guessing number game</h2>
                         <button onClick={Show}>Play</button>
                     </div>
@@ -115,7 +104,7 @@ const Close =() =>{
                     </div>
                 )}
                 <div className="projects" >
-                    <div className="project"id="view">
+                    <div className="project" >
                     <a href="https://na3em17.github.io/Fech-Project/"><img src={pic1} /></a>
                     <p>
                             fech api project <br />by using githup <br />
@@ -123,42 +112,42 @@ const Close =() =>{
                         </p>
                     </div>
                     
-                     <div className="project2" id="view">
+                     <div className="project2"  >
                         <a href="https://na3em17.github.io/project_2/"><img src={pic2} /></a>
                         <p>
                             project 1 <br />fully responsive <br />
                             <a href="https://na3em17.github.io/project_2/">visit project</a>
                         </p>
                     </div>
-                    <div className="project" id="view">
+                    <div className="project" >
                         <a href="https://na3em17.github.io/project_4/"><img src={pic3} /></a>
                         <p> 
                             project 2 <br />fully responsive <br />
                             <a href="https://na3em17.github.io/project_4/">visit project</a>
                         </p>
                     </div>
-                    <div className="project2"id="view">
+                    <div className="project2" >
                         <a href="https://na3em17.github.io/project_6/"><img src={pic4} /></a>
                         <p>
                             project 3 <br />fully responsive <br />
                             <a href="https://na3em17.github.io/project_6/">visit project</a>
                         </p>
                     </div>
-                    <div className="project"id="view">
+                    <div className="project" >
                         <a href="https://na3em17.github.io/project7/"><img src={pic5} /></a>
                         <p>
                             project 4 <br />fully responsive <br />
                             <a href="https://na3em17.github.io/project7/">visit project</a>
                         </p>
                     </div>
-                    <div className="project2"id="view">
+                    <div className="project2">
                         <a href="https://na3em17.github.io/first_project/"><img src={pic6} /></a>
                         <p>
                             my first project <br />fully responsive <br />
                             <a href="https://na3em17.github.io/first_project/">visit project</a>
                         </p>
                     </div>
-                    <div className="project"id="view">
+                    <div className="project" id="view">
                         <a href="https://passwordgenerator-pearl-mu.vercel.app/"><img src={pic7} /></a>
                     	<p>
                             first project with react <br />

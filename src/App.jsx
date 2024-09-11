@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header name="prifiles" name2="game" name3="footer" hdr="h-containor2"
-      linked="http://myportofolio-self-five.vercel.app/#h-containor"
+      linked="https://myportofolio-self-five.vercel.app/#view"
       git="http://myportofolio-self-five.vercel.app/.img"
       />
       <Contain/>

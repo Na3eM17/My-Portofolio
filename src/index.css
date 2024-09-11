@@ -1,13 +1,4 @@
-#view{
-  opacity: 0;
-  transform: translateY(100px);
-}
 
-#view.show{
-  transform: translateY(0);
-  opacity: 1;
-  transition: 1s ease-in;
-}
 #root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   display: flex;
@@ -161,6 +152,9 @@ input{
   right: -2%;
   top: 0;
   border-radius: 0;
+}
+#play{
+  padding: 10px;
 }
 .projects{
   width: 90%;
