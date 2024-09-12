@@ -247,7 +247,7 @@ width: 50%;
 aspect-ratio: 4/4;
 z-index: -1;
 filter: drop-shadow(20px 20px  20px rgb(255, 0, 0));
-top: 18%;
+top: 7%;
 left: 25%;
 transform: translate(-50%,-50%);
 }
@@ -308,8 +308,8 @@ border-radius: 0;
 
 @media screen and (max-width:435px){
   .img-animation{
-    width: 100%;
-    left: 0%;
+    width: 90%;
+    left: 5%;
   }
   #game{
     width: 80%;
