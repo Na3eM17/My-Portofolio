@@ -239,7 +239,7 @@ input{
 opacity: 0.2;
 animation-name: rotate;
 animation-timing-function: linear;
-animation-duration: 7s;
+animation-duration: 10s;
 animation-delay: 0.5s;
 animation-iteration-count: infinite;
 border-radius: 100%;
@@ -308,8 +308,9 @@ border-radius: 0;
 
 @media screen and (max-width:435px){
   .img-animation{
-    width: 90%;
-    left: 5%;
+    width: 80%;
+    left: 10%;
+    top:25%
   }
   #game{
     width: 80%;
