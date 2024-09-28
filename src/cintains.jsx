@@ -14,7 +14,7 @@ import pic7 from "./assets/reactprojrct.png"
 
 function Contain(){
 
-
+    
 
 
     const [games,setGame]=useState(true);
@@ -22,8 +22,10 @@ function Contain(){
     const[inputValue,setInputValue]=useState("");
     const [res , setRes]=useState("");
     const[time, settime]=useState(0);
+    
 
     
+
     const Show = () =>{
     setGame(false);
 }
@@ -64,6 +66,8 @@ const Close =() =>{
     setRes("")
     settime(0)
 }
+
+
 
     return(
         <>
@@ -147,7 +151,7 @@ const Close =() =>{
                             <a href="https://na3em17.github.io/first_project/">visit project</a>
                         </p>
                     </div>
-                    <div className="project" id="view">
+                    <div className="project" >
                         <a href="https://passwordgenerator-pearl-mu.vercel.app/"><img src={pic7} /></a>
                     	<p>
                             first project with react <br />
